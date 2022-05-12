@@ -1,10 +1,12 @@
 import ReactDOM from 'react-dom';
-import InitialScreen from './initialScreen/InitialScreen'
+import InitialScreen from './InitialScreen/InitialScreen'
+import QuestionsScreen from './QuestionsScreen/QuestionsScreen';
 
 function App(){
     return(
         <>
             <InitialScreen />
+            <QuestionsScreen />
         </>
     );
 }

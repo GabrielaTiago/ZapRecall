@@ -1,13 +1,13 @@
-body{
+body {
     width: 100%;
     height: 100%;
     background-color: #FB6B6B;
     font-family: Recursive, sans-serif;
     font-weight: 400;
+    color: #333333;
     box-sizing: border-box;
 }
-
-main{
+.initial-screen{
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ main{
     gap: 13px 30px;
 }
 
-main img {
+.img-initial-screen {
     width: 136px;
     height: 161px;
 }
@@ -29,7 +29,7 @@ h1 {
     color: #FFFFFF;
 }
 
-.initial-button{
+.initial-button {
     width: 246px;
     height: 54px;
     font-size: 18px;
@@ -38,4 +38,80 @@ h1 {
     border: 1px solid #D70900;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+header,
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 52px;
+    height: 60px;
+}
+
+.logo-container {
+    width: 256px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    width: 268px;
+    min-height: 65px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    padding: 0 22px 0 15px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+ion-icon {
+    width: 20px;
+    height: 23px;
+}
+
+footer {
+    width: 100%;
+    min-height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.hidden {
+    display: none;
 }
