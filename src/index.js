@@ -1,12 +1,14 @@
 import ReactDOM from 'react-dom';
-import InitialScreen from './InitialScreen/InitialScreen'
+import React from 'react';
+import InitialScreen from './InitialScreen/InitialScreen';
 import QuestionsScreen from './QuestionsScreen/QuestionsScreen';
 
 function App(){
+    const [screen, setScreen] = React.useState('init');
+    
     return(
         <>
-            <InitialScreen />
-            <QuestionsScreen />
+            {screen === 'init' ? <InitialScreen setScreen={setScreen}/> : <QuestionsScreen />}
         </>
     );
 }
