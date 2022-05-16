@@ -4,11 +4,11 @@ export default function Footer({ icons }) {
     const LENGTH_ARRAY = 8;
     let i = 0;
 
-    console.log(i);
     return (
         <footer>
+            {console.log(icons[i])}
             {icons.length !== LENGTH_ARRAY ? null
-                : (icons.length === LENGTH_ARRAY && icons[i] !== "close-circle")
+                : (icons.length === LENGTH_ARRAY && icons[i] === "close-circle")
                     ?
                     <>
                         <img src="" alt="emoji de festa" />
