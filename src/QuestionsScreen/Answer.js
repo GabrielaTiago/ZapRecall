@@ -1,16 +1,22 @@
 import React from "react";
 
-export default function Answer({ answer, number, icons, setIcons}) {
+export default function Answer({ answer, number, icons, setIcons, showIcons}) {
     const [color, setColor] = React.useState("none");
+    // const values = [
+    //     { class: "red", ionIcon: "close-circle" },
+    //     { class: "yellow", ionIcon: "help-circle" },
+    //     { class: "green", ionIcon: "checkmark-circle" }
+    // ];
+
 
     if (color === "none") {
         return (
             <li className="query">
                 <h3>{answer}</h3>
                 <div className="buttons">
-                    <button className="b-red" onClick={() => setColor("red")}>Não lembrei</button>
-                    <button className="b-yellow" onClick={() => setColor("yellow")}>Quase não lembrei</button>
-                    <button className="b-green" onClick={() => setColor("green")}>Zap!</button>
+                    <button className="b-red" onClick={() => {showIcons("close-circle");  setColor("red") }}>Não lembrei</button>
+                    <button className="b-yellow" onClick={() => {showIcons("help-circle"); setColor("yellow") }}>Quase não lembrei</button>
+                    <button className="b-green" onClick={() => {showIcons("checkmark-circle"); setColor("green"); }}>Zap!</button>
                 </div>
             </li>
         );

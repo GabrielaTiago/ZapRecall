@@ -63,7 +63,7 @@ const cardsData = [
 ];
 
 
-export default function Main(props) {
+export default function Main({showIcons}) {
     const [reference, setReference] = React.useState(cardsData);
 
     function changeTurned(index) {
@@ -89,7 +89,7 @@ export default function Main(props) {
                     !data.turned
                         ? <QuestionFront key={index} number={index} data={data} reference={reference} changeTurned={changeTurned} />
                         : data.flipped
-                            ? <Answser key={index} number={index} answer={data.answer} />
+                            ? <Answser key={index} number={index} answer={data.answer} showIcons={showIcons} />
                             : <QuestionBack key={index} number={index} question={data.question} changeFlipped={changeFlipped} />)
                 }
             </ul>
