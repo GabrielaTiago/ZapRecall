@@ -1,13 +1,7 @@
 import React from "react";
 
-export default function Answer({ answer, number, icons, setIcons, showIcons}) {
+export default function Answer({ answer, number, showIcons}) {
     const [color, setColor] = React.useState("none");
-    // const values = [
-    //     { class: "red", ionIcon: "close-circle" },
-    //     { class: "yellow", ionIcon: "help-circle" },
-    //     { class: "green", ionIcon: "checkmark-circle" }
-    // ];
-
 
     if (color === "none") {
         return (

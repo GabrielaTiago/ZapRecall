@@ -6,8 +6,8 @@ import React from "react";
 export default function QuestionsScreen(){
     const [icons, setIcons] = React.useState([]);
 
-    function showIcons(teste){
-        setIcons([...icons, teste])
+    function showIcons(icon){
+        setIcons([...icons, icon])
         console.log(icons);
     }
     return(
