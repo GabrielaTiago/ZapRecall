@@ -9,7 +9,7 @@ export default function Answer({ answer, number, showIcons}) {
                 <h3>{answer}</h3>
                 <div className="buttons">
                     <button className="b-red" onClick={() => {showIcons("close-circle");  setColor("red") }}>Não lembrei</button>
-                    <button className="b-yellow" onClick={() => {showIcons("help-circle"); setColor("yellow") }}>Quase não lembrei</button>
+                    <button className="b-orange" onClick={() => {showIcons("help-circle"); setColor("orange") }}>Quase não lembrei</button>
                     <button className="b-green" onClick={() => {showIcons("checkmark-circle"); setColor("green"); }}>Zap!</button>
                 </div>
             </li>
@@ -23,9 +23,9 @@ export default function Answer({ answer, number, showIcons}) {
             </li>
         );
     }
-    else if (color === "yellow") {
+    else if (color === "orange") {
         return (
-            <li className="question yellow">
+            <li className="question orange">
                 <h3 className="risk">Pergunta {number + 1}</h3>
                 <ion-icon name="help-circle"></ion-icon>
             </li>

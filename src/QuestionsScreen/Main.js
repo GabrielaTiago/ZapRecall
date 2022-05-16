@@ -62,6 +62,11 @@ const cardsData = [
     },
 ];
 
+cardsData.sort(comparator);
+
+function comparator() { 
+	return Math.random() - 0.5; 
+}
 
 export default function Main({showIcons}) {
     const [reference, setReference] = React.useState(cardsData);

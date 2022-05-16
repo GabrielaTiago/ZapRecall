@@ -71,7 +71,7 @@ main {
 }
 
 .questions{
-    margin-bottom: 120px;
+    margin-bottom: 140px;
 }
 
 .question {
@@ -143,7 +143,7 @@ ion-icon {
     background-color: #FF3030;
 }
 
-.b-yellow {
+.b-orange {
     background-color: #FF922E;
 }
 
@@ -159,12 +159,17 @@ ion-icon {
     color: #FF3030;
 }
 
-.yellow, [name~=help-circle]{
+.orange, [name~=help-circle]{
     color: #FF922E;
 }
 
 .green, [name~=checkmark-circle]{
     color: #2FBE34;
+}
+
+[name~=close-circle], [name~=help-circle], [name~=checkmark-circle]{
+    width: 23px;
+    height: 23px;
 }
 
 footer {
@@ -178,9 +183,25 @@ footer {
     align-items: center;
     position: fixed;
     bottom: 0;
+    gap: 15px;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+footer h3 {
+    font-weight: 700;
 }
 
-footer p {
-    font-size: 18px;
-    line-height: 22px;
+h5{
+    width: 222px;
+    word-wrap: normal;
+    text-align: center;
+}
+
+.message{
+    margin-top: 15px;
+    width: 123px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

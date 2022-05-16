@@ -8,7 +8,6 @@ export default function QuestionsScreen(){
 
     function showIcons(icon){
         setIcons([...icons, icon])
-        console.log(icons);
     }
     return(
         <>
