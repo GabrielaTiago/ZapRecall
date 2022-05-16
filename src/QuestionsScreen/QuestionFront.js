@@ -1,4 +1,4 @@
-export default function QuestionFront ({reference, data, number, changeTurned}){
+export default function QuestionFront ({number, changeTurned}){
     return (
         <li className="question"> 
             <h3>Pergunta {number+1}</h3>
