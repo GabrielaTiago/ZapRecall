@@ -1,4 +1,4 @@
-import Answser from "./Answers"
+import Answser from "./Answer"
 import QuestionBack from "./QuestionBack";
 import QuestionFront from "./QuestionFront";
 import React from "react";
@@ -89,7 +89,7 @@ export default function Main(props) {
                     !data.turned
                         ? <QuestionFront key={index} number={index} data={data} reference={reference} changeTurned={changeTurned} />
                         : data.flipped
-                            ? <Answser key={index} answer={data.answer} />
+                            ? <Answser key={index} number={index} answer={data.answer} />
                             : <QuestionBack key={index} number={index} question={data.question} changeFlipped={changeFlipped} />)
                 }
             </ul>

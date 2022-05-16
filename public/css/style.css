@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-.initial-screen{
+.initial-screen {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ main {
 
 h3 {
     font-size: 16px;
-    word-wrap:normal;
+    word-wrap: normal;
 }
 
 ion-icon {
@@ -94,7 +94,7 @@ ion-icon {
     height: 23px;
 }
 
-.query{
+.query {
     width: 267px;
     min-height: 131px;
     padding: 18px 15px 6px 15px;
@@ -107,13 +107,13 @@ ion-icon {
     justify-content: space-between;
 }
 
-.flip{
+.flip {
     width: 30px;
-    height: 20px;   
+    height: 20px;
     align-self: flex-end;
 }
 
-.buttons{
+.buttons {
     width: 100%;
     display: flex;
     align-items: center;
@@ -122,7 +122,7 @@ ion-icon {
     align-self: flex-end;
 }
 
-.buttons button{
+.buttons button {
     width: 85.17px;
     height: 37.17px;
     border-radius: 5px;
@@ -134,16 +134,33 @@ ion-icon {
     text-align: center;
 }
 
-.b-red{
+.b-red {
+    color: #FF3030;
     background-color: #FF3030;
 }
 
-.b-yellow{
+.b-yellow {
     background-color: #FF922E;
 }
 
-.b-green{
+.b-green {
     background-color: #2FBE34;
+}
+
+.risk {
+    text-decoration-line: line-through;
+}
+
+.red {
+    color: #FF3030;
+}
+
+.yellow{
+    color: #FF922E;
+}
+
+.green{
+    color: #2FBE34;
 }
 
 footer {
@@ -156,7 +173,7 @@ footer {
     align-items: center;
     position: fixed;
     bottom: 0;
-   
+
 }
 
 footer p {
@@ -164,6 +181,6 @@ footer p {
     line-height: 22px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
