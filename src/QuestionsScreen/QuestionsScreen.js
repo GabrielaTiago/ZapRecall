@@ -6,7 +6,7 @@ export default function QuestionsScreen(){
     return(
         <>
             <Header />
-            <Main/>
+            <Main />
             <Footer />
         </>
     );

@@ -1,10 +1,7 @@
-
-
-export default function QuestionBack() {
+export default function QuestionBack({question}) {
     return (
-        <ul className="teste">
-            <li className="query">O que é JSX? </li>
-            <img className="flip" src="../assets/flip.png" alt="icon to flip the card"/>
-        </ul>
+            <li className="query">{question}
+                <img className="flip" src="../assets/flip.png" alt="icon to flip the card"/>
+            </li>
     );
 }
