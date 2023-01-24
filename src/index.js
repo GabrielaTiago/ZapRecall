@@ -1,20 +1,16 @@
-import ReactDOM from 'react-dom';
-import React from 'react';
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
 
 import "./styles/reset.css";
 import "./styles/styles.css";
 
-import InitialScreen from './InitialScreen/InitialScreen';
-import QuestionsScreen from './QuestionsScreen/QuestionsScreen';
-
-function App(){
-    const [screen, setScreen] = React.useState('init');
-    
-    return(
-        <>
-            {screen === 'init' ? <InitialScreen setScreen={setScreen}/> : <QuestionsScreen />}
-        </>
-    );
+function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
 ReactDOM.render(<App />, document.querySelector(".root"));
