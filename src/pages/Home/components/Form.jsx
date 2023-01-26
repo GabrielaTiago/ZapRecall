@@ -22,7 +22,7 @@ export function Form() {
   };
 
   const handleOnChange = (e) => {
-    setGoal(e.target.value);
+    setGoal(Number(e.target.value));
     setDisabled(false);
     setError(false);
   };

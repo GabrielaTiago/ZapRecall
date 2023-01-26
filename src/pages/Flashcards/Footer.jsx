@@ -4,19 +4,18 @@ import { Restart } from "./components/Buttons";
 import { Congrats, Wrong } from "./components/Messages";
 
 export function Footer() {
-  const { icons } = useFlashCardsContext();
+  const { icons, goal } = useFlashCardsContext();
   const LENGTH_DECK = 8;
-  const WRONG_ALLOWED = 0;
-  const wrongs = icons.filter((element) => element === "close-circle");
+  const zaps = icons.filter((element) => element === "checkmark-circle");
 
   const allAnswerd = icons.length === LENGTH_DECK;
-  const noErros = wrongs.length === WRONG_ALLOWED;
+  const reachedTheGoal = zaps.length >= goal;
   const hasIcons = icons.length > 0;
 
   return (
     <footer>
-      {allAnswerd && noErros && <Congrats />}
-      {!allAnswerd || (!noErros && <Wrong />)}
+      {allAnswerd && reachedTheGoal && <Congrats />}
+      {!allAnswerd || (!reachedTheGoal && <Wrong />)}
 
       <p className="counting">
         {icons.length}/{LENGTH_DECK} CONCLUÍDOS
@@ -24,8 +23,8 @@ export function Footer() {
 
       {hasIcons && (
         <div className="icons">
-          {icons.map((icon) => (
-            <ion-icon key={icon} name={icon}></ion-icon>
+          {icons.map((icon, index) => (
+            <ion-icon key={index} name={icon}></ion-icon>
           ))}
         </div>
       )}
