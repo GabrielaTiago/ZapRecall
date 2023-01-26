@@ -1,4 +1,7 @@
-export function Play({ playCard, cardIndex }) {
+import { useFlashCardsContext } from "../../../../contexts";
+
+export function Play({ cardIndex }) {
+  const { playCard } = useFlashCardsContext();
   return (
     <ion-icon
       className="play"

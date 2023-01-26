@@ -2,17 +2,13 @@ import { useState } from "react";
 import { Answers } from "./Answers";
 import flip from "../../../../assets/images/flip.png";
 
-export function Question({ cardIndex, question, answer, setAnswerType }) {
+export function Question({ cardIndex, question, answer }) {
   const [turnedAnswers, setTurnedAnswers] = useState(false);
 
   return (
     <>
       {turnedAnswers ? (
-        <Answers
-          answer={answer}
-          cardIndex={cardIndex}
-          setAnswerType={setAnswerType}
-        />
+        <Answers answer={answer} cardIndex={cardIndex} />
       ) : (
         <li className="card">
           <div className="query">

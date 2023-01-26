@@ -1,6 +1,8 @@
+import { useFlashCardsContext } from "../../../../contexts";
 import { CardType } from "../../CardType";
 
-export function Card({ playCard, cardIndex, type }) {
+export function Card({ cardIndex, type }) {
+  const { playCard } = useFlashCardsContext();
   return (
     <li className={`card ${type}`}>
       <div className="question">

@@ -1,7 +1,7 @@
 import { useFlashCardsContext } from "../../../../contexts";
 
-export function Zap({ cardIndex, setAnswerType }) {
-  const { showIcons } = useFlashCardsContext();
+export function Zap({ cardIndex }) {
+  const { showIcons, setAnswerType } = useFlashCardsContext();
 
   return (
     <button

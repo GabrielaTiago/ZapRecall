@@ -1,7 +1,7 @@
 import { useFlashCardsContext } from "../../../../contexts";
 
-export function Wrong({ cardIndex, setAnswerType }) {
-  const { showIcons } = useFlashCardsContext();
+export function Wrong({ cardIndex }) {
+  const { showIcons, setAnswerType } = useFlashCardsContext();
 
   return (
     <button

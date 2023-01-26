@@ -1,7 +1,7 @@
 import { useFlashCardsContext } from "../../../../contexts";
 
-export function Almost({ cardIndex, setAnswerType }) {
-  const { showIcons } = useFlashCardsContext();
+export function Almost({ cardIndex }) {
+  const { showIcons, setAnswerType } = useFlashCardsContext();
 
   return (
     <button

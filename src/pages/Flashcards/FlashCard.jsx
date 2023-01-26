@@ -1,25 +1,12 @@
 import { Card, Question } from "./components/Faces";
 
-export function FlashCard({
-  playCard,
-  cardIndex,
-  isTurned,
-  question,
-  answer,
-  type,
-  setAnswerType,
-}) {
+export function FlashCard({ cardIndex, isTurned, question, answer, type }) {
   return (
     <>
       {isTurned ? (
-        <Question
-          cardIndex={cardIndex}
-          question={question}
-          answer={answer}
-          setAnswerType={setAnswerType}
-        />
+        <Question cardIndex={cardIndex} question={question} answer={answer} />
       ) : (
-        <Card playCard={playCard} cardIndex={cardIndex} type={type} />
+        <Card cardIndex={cardIndex} type={type} />
       )}
     </>
   );
