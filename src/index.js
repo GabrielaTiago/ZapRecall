@@ -1,16 +1,19 @@
-import ReactDOM from 'react-dom';
-import React from 'react';
-import InitialScreen from './InitialScreen/InitialScreen';
-import QuestionsScreen from './QuestionsScreen/QuestionsScreen';
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { FlashCardsContextProvider } from "./contexts";
+import { AppRoutes } from "./routes";
 
-function App(){
-    const [screen, setScreen] = React.useState('init');
-    
-    return(
-        <>
-            {screen === 'init' ? <InitialScreen setScreen={setScreen}/> : <QuestionsScreen />}
-        </>
-    );
+import "./styles/reset.css";
+import "./styles/styles.css";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <FlashCardsContextProvider>
+        <AppRoutes />
+      </FlashCardsContextProvider>
+    </BrowserRouter>
+  );
 }
 
 ReactDOM.render(<App />, document.querySelector(".root"));

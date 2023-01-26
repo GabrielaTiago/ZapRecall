@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  --background-color: #fb6b6b;
+  --background-color-query: #ffffd5;
+  --text-color: #333333;
+  --color-white: #ffffff;
+  --color-red: #d70900;
+  --color-red-wrong: #ff3030;
+  --color-yellow-almost: #ff922e;
+  --color-green-zap: #2fbe34;
+}
+body,
+main,
+footer,
+.home-screen,
+.questions,
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button,
+.question ion-icon,
+.flip {
+  cursor: pointer;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Recursive, sans-serif;
+  font-weight: 700;
+}
+header {
+  width: 100vw;
+  padding: 4% 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  justify-content: center;
+}
+footer {
+  width: 100%;
+  min-height: 70px;
+  padding: 3.25% 2%;
+  justify-content: center;
+  gap: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  background-color: var(--color-white);
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+h1 {
+  color: var(--color-white);
+  font-family: Rigthteous, sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+}
+h3 {
+  font-size: 16px;
+  word-wrap: normal;
+}
+h5 {
+  word-wrap: normal;
+  text-align: center;
+}
+ion-icon {
+  width: 23px;
+  height: 23px;
+}
+.home-screen {
+  width: 100%;
+  height: 100vh;
+  gap: 30px;
+}
+.home-screen img {
+  width: 136px;
+  height: 161px;
+}
+.home-screen button {
+  width: 246px;
+  height: 54px;
+  background-color: var(--color-white);
+  color: var(--color-red);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid var(--color-red);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.logo-container {
+  width: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo-container img {
+  width: 52px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.questions {
+  width: 300px;
+  margin-bottom: 140px;
+  gap: 25px;
+}
+.card {
+  width: 100%;
+  /* position: absolute;
+  transform-style: preserve-3d; */
+}
+.question {
+  width: 100%;
+  min-height: 65px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  /* transform: rotateX(180deg); */
+}
+.query {
+  width: 100%;
+  min-height: 131px;
+  padding: 18px 15px 6px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background-color-query);
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+.query h3 {
+  font-weight: 400;
+}
+.flip {
+  width: 30px;
+  height: 20px;
+  align-self: flex-end;
+  /* transform: rotateX(180deg); */
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.buttons button {
+  width: 85.17px;
+  height: 37.17px;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--color-white);
+  font-family: Recursive, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+}
+.b-red {
+  background-color: var(--color-red-wrong);
+}
+.b-orange {
+  background-color: var(--color-yellow-almost);
+}
+.b-green {
+  background-color: var(--color-green-zap);
+}
+.risk {
+  text-decoration-line: line-through;
+}
+.wrong,
+[name~="close-circle"] {
+  color: var(--color-red-wrong);
+  text-decoration-line: line-through;
+}
+.almost,
+[name~="help-circle"] {
+  color: var(--color-yellow-almost);
+  text-decoration-line: line-through;
+}
+.zap,
+[name~="checkmark-circle"] {
+  color: var(--color-green-zap);
+  text-decoration-line: line-through;
+}
+[name~="close-circle"],
+[name~="help-circle"],
+[name~="checkmark-circle"] {
+  width: 23px;
+  height: 23px;
+}
+.message {
+  width: 222px;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.message h3 {
+  font-weight: 700;
+}
+.counting {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.icons{
+  display: flex;
+  gap: 3px;
+}
