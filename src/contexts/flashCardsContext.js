@@ -40,6 +40,7 @@ export function FlashCardsContextProvider({ children }) {
         setIcons,
         showIcons,
         flashcards,
+        setFlashcards,
         playCard,
         setAnswerType
       }}

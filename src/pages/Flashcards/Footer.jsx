@@ -1,5 +1,6 @@
 import React from "react";
 import { useFlashCardsContext } from "../../contexts";
+import { Restart } from "./components/Buttons";
 import { Congrats, Wrong } from "./components/Messages";
 
 export function Footer() {
@@ -18,7 +19,7 @@ export function Footer() {
       {!allAnswerd || (!noErros && <Wrong />)}
 
       <p className="counting">
-        {icons.length}/{LENGTH_DECK} Concluídos
+        {icons.length}/{LENGTH_DECK} CONCLUÍDOS
       </p>
 
       {hasIcons && (
@@ -28,6 +29,8 @@ export function Footer() {
           ))}
         </div>
       )}
+
+      {allAnswerd && <Restart />}
     </footer>
   );
 }

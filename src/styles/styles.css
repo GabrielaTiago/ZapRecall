@@ -45,7 +45,7 @@ main {
 footer {
   width: 100%;
   min-height: 70px;
-  padding: 3.25% 2%;
+  padding: 2%;
   justify-content: center;
   gap: 14px;
   position: fixed;
@@ -217,7 +217,17 @@ ion-icon {
   font-size: 18px;
   line-height: 22px;
 }
-.icons{
+.icons {
   display: flex;
   gap: 3px;
+}
+.restart {
+  width: 167px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: var(--color-white);
+  background-color: var(--background-color);
 }
