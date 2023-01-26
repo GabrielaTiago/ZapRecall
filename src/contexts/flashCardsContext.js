@@ -11,6 +11,7 @@ export function FlashCardsContextProvider({ children }) {
   const flashcardsDeck = mountFlashcardObj();
   const [flashcards, setFlashcards] = useState(flashcardsDeck);
   const [icons, setIcons] = useState([]);
+  const [goal, setGoal] = useState('');
 
   function playCard(cardIndex) {
     const cards = [...flashcards];
@@ -42,7 +43,9 @@ export function FlashCardsContextProvider({ children }) {
         flashcards,
         setFlashcards,
         playCard,
-        setAnswerType
+        setAnswerType,
+        goal,
+        setGoal,
       }}
     >
       {children}
