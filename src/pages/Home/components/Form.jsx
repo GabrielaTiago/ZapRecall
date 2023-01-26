@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFlashCardsContext } from "../../../contexts";
 import { Error } from "./Error";
+import { Deck } from "./Deck";
 
 export function Form() {
   const navigate = useNavigate();
@@ -37,6 +38,7 @@ export function Form() {
         required
       />
       {error && <Error />}
+      <Deck />
       <button type="submit" disabled={disabled} className="home-screen-button">
         Iniciar Recall!!
       </button>

@@ -1,3 +1,10 @@
+export const options = [
+  { value: "reactCards", label: "React" },
+  { value: "narutoCards", label: "Naruto" },
+  { value: "adeleCards", label: "Adele" },
+];
+
+
 export let reactCards = [
   {
     question: "O que é JSX?",
