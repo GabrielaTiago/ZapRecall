@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { mountFlashcardObj } from "../pages/Flashcards/mountFlashcardsObj";
 
 const FlashCardsContext = createContext();
@@ -8,14 +8,21 @@ export const useFlashCardsContext = () => {
 };
 
 export function FlashCardsContextProvider({ children }) {
-  const flashcardsDeck = mountFlashcardObj();
-  const [flashcards, setFlashcards] = useState(flashcardsDeck);
   const [icons, setIcons] = useState([]);
-  const [goal, setGoal] = useState('');
+  const [goal, setGoal] = useState("");
+  const [deckOfCards, setDeckOfCards] = useState("reactCards");
+  const [flashcards, setFlashcards] = useState(mountFlashcardObj(deckOfCards));
+
+  useEffect(() => {
+    setFlashcards(mountFlashcardObj(deckOfCards));
+  }, [deckOfCards]);
 
   function playCard(cardIndex) {
     const cards = [...flashcards];
     const question = cards[cardIndex];
+
+    if(question.isTurned) return;
+    
     question.isTurned = true;
 
     setFlashcards(cards);
@@ -46,6 +53,8 @@ export function FlashCardsContextProvider({ children }) {
         setAnswerType,
         goal,
         setGoal,
+        deckOfCards,
+        setDeckOfCards,
       }}
     >
       {children}

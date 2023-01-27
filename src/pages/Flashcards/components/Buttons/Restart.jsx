@@ -2,12 +2,11 @@ import { useFlashCardsContext } from "../../../../contexts";
 import { mountFlashcardObj } from "../../mountFlashcardsObj";
 
 export function Restart() {
-  const flashcardsDeck = mountFlashcardObj();
-  const { setIcons, setFlashcards } = useFlashCardsContext();
+  const { setIcons, setFlashcards, deckOfCards } = useFlashCardsContext();
 
   const restartFlashcards = () => {
     setIcons([]);
-    setFlashcards(flashcardsDeck);
+    setFlashcards(mountFlashcardObj(deckOfCards));
   };
 
   return (

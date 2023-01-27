@@ -1,7 +1,14 @@
 import Select from "react-select";
+import { useFlashCardsContext } from "../../../contexts";
 import { options } from "../../../mock";
 
 export function Deck() {
+  const { setDeckOfCards } = useFlashCardsContext();
+
+  const handleSelection = ({ value }) => {
+    setDeckOfCards(value);
+  };
+
   const customTheme = (theme) => {
     return {
       ...theme,
@@ -37,6 +44,7 @@ export function Deck() {
       theme={customTheme}
       styles={customStyles}
       placeholder={"Escolha seu deck"}
+      onChange={handleSelection}
       autoFocus
     />
   );
