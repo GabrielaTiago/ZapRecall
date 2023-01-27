@@ -1,9 +1,7 @@
 import { useFlashCardsContext } from "../../contexts";
 import { FlashCard } from "./FlashCard";
-import { sortDeckOfCards } from "./sortDeckOfCards";
 
 export function AllFlashCards() {
-  sortDeckOfCards();
   const { flashcards } = useFlashCardsContext();
 
   return (
