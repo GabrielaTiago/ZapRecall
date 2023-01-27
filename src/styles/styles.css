@@ -2,16 +2,20 @@
   box-sizing: border-box;
   --background-color: #fb6b6b;
   --background-color-query: #ffffd5;
+  --background-color-btn-disabled: #e8e8e8;
   --text-color: #333333;
   --color-white: #ffffff;
   --color-red: #d70900;
   --color-red-wrong: #ff3030;
   --color-yellow-almost: #ff922e;
   --color-green-zap: #2fbe34;
+  --color-placeholder: #adadad;
+  --color-btn-disabled: #c0c0c0;
 }
 body,
 main,
 footer,
+form,
 .home-screen,
 .questions,
 .message {
@@ -45,7 +49,7 @@ main {
 footer {
   width: 100%;
   min-height: 70px;
-  padding: 3.25% 2%;
+  padding: 2%;
   justify-content: center;
   gap: 14px;
   position: fixed;
@@ -56,6 +60,44 @@ footer {
   line-height: 21.6px;
   background-color: var(--color-white);
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+form {
+  width: 100%;
+  justify-content: center;
+  gap: 18px;
+}
+form input,
+form button {
+  width: 100%;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+}
+form span {
+  color: var(--color-red);
+  font-size: 14px;
+  line-height: 16px;
+}
+input {
+  padding: 2% 5%;
+  height: 43px;
+  color: var(--color-red);
+  background-color: var(--color-white);
+  outline: none;
+}
+input::placeholder {
+  color: var(--color-placeholder);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+form button:disabled {
+  background-color: var(--background-color-btn-disabled);
+  color: var(--color-btn-disabled);
+  border: none;
 }
 h1 {
   color: var(--color-white);
@@ -76,7 +118,7 @@ ion-icon {
   height: 23px;
 }
 .home-screen {
-  width: 100%;
+  width: 246px;
   height: 100vh;
   gap: 30px;
 }
@@ -85,16 +127,16 @@ ion-icon {
   height: 161px;
 }
 .home-screen button {
-  width: 246px;
   height: 54px;
   background-color: var(--color-white);
   color: var(--color-red);
-  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   border: 1px solid var(--color-red);
-  border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.select{
+  width: 100%;
 }
 .logo-container {
   width: 256px;
@@ -217,7 +259,17 @@ ion-icon {
   font-size: 18px;
   line-height: 22px;
 }
-.icons{
+.icons {
   display: flex;
   gap: 3px;
+}
+.restart {
+  width: 167px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: var(--color-white);
+  background-color: var(--background-color);
 }

@@ -1,7 +1,14 @@
-import { reactCards } from "../../mock";
+import { reactCards, narutoCards, harryPotterCards } from "../../mock";
+import { sortDeckOfCards } from "./sortDeckOfCards";
 
-export function mountFlashcardObj() {
-  let flashcardsDeck = reactCards.map((data) => {
+export function mountFlashcardObj(deckOfCards) {
+  const cards = {
+    reactCards,
+    narutoCards,
+    harryPotterCards,
+  };
+
+  const flashcardsDeck = cards[deckOfCards].map((data) => {
     return {
       ...data,
       isTurned: false,
@@ -9,5 +16,7 @@ export function mountFlashcardObj() {
     };
   });
 
-  return flashcardsDeck;
+  const sortedFlashCards = sortDeckOfCards(flashcardsDeck);
+
+  return sortedFlashCards;
 }

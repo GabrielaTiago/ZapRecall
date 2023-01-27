@@ -1,9 +1,7 @@
-import { reactCards } from "../../mock";
-
-export function sortDeckOfCards() {
+export function sortDeckOfCards(deckOfCards) {
   let comparator = () => {
     return Math.random() - 0.5;
   };
 
-  reactCards.sort(comparator);
+  return deckOfCards.sort(comparator);
 }
