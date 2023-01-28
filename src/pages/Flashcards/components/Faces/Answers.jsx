@@ -1,6 +1,6 @@
 import { Almost, Wrong, Zap } from "../Buttons";
 
-export function Answers({ answer, cardIndex,  }) {
+export function Answers({ answer, cardIndex }) {
   return (
     <li className="card">
       <div className="query">

@@ -135,7 +135,7 @@ ion-icon {
   border: 1px solid var(--color-red);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.select{
+.select {
   width: 100%;
 }
 .logo-container {
@@ -152,14 +152,13 @@ ion-icon {
   align-items: center;
 }
 .questions {
-  width: 300px;
+  width: 100%;
+  padding: 0 3%;
   margin-bottom: 140px;
   gap: 25px;
 }
 .card {
   width: 100%;
-  /* position: absolute;
-  transform-style: preserve-3d; */
 }
 .question {
   width: 100%;
@@ -171,7 +170,6 @@ ion-icon {
   background-color: var(--color-white);
   border-radius: 5px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-  /* transform: rotateX(180deg); */
 }
 .query {
   width: 100%;
@@ -191,18 +189,19 @@ ion-icon {
   width: 30px;
   height: 20px;
   align-self: flex-end;
-  /* transform: rotateX(180deg); */
 }
 .buttons {
   width: 100%;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-self: flex-end;
   align-self: flex-end;
+  gap: 3%;
 }
-.buttons button {
-  width: 85.17px;
+.button {
+  width: 100%;
   height: 37.17px;
   border-radius: 5px;
   text-align: center;
@@ -272,4 +271,24 @@ ion-icon {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   color: var(--color-white);
   background-color: var(--background-color);
+}
+
+@media (max-width: 300px) {
+  .buttons {
+    height: auto;
+    aspect-ratio: 7/2;
+  }
+  .button {
+    height: 100%;
+    padding: 2%;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    padding: 2%;
+  }
+  .questions {
+    width: 567.12px;
+  }
 }

@@ -5,7 +5,7 @@ export function Almost({ cardIndex }) {
 
   return (
     <button
-      className="nutton b-orange"
+      className="button b-orange"
       onClick={() => {
         showIcons("help-circle");
         setAnswerType(cardIndex, "almost");

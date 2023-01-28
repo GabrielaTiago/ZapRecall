@@ -45,7 +45,6 @@ export function Deck() {
       styles={customStyles}
       placeholder={"Escolha seu deck"}
       onChange={handleSelection}
-      autoFocus
     />
   );
 }
