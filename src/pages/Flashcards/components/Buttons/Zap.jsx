@@ -5,7 +5,7 @@ export function Zap({ cardIndex }) {
 
   return (
     <button
-      className="b-green"
+      className="button b-green"
       onClick={() => {
         showIcons("checkmark-circle");
         setAnswerType(cardIndex, "zap");

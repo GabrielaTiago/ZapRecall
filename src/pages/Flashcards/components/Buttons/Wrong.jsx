@@ -5,7 +5,7 @@ export function Wrong({ cardIndex }) {
 
   return (
     <button
-      className="b-red"
+      className="button b-red"
       onClick={() => {
         showIcons("close-circle");
         setAnswerType(cardIndex, "wrong");
