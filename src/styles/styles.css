@@ -272,6 +272,19 @@ ion-icon {
   color: var(--color-white);
   background-color: var(--background-color);
 }
+.spin {
+  transform-style: preserve-3d;
+  animation: spin 1.2s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 
 @media (max-width: 300px) {
   .buttons {

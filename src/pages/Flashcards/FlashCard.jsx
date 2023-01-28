@@ -1,10 +1,11 @@
-import { Card, Question } from "./components/Faces";
+import { Card } from "./components/Faces";
+import { Query } from "./Query";
 
 export function FlashCard({ cardIndex, isTurned, question, answer, type }) {
   return (
     <>
       {isTurned ? (
-        <Question cardIndex={cardIndex} question={question} answer={answer} />
+        <Query cardIndex={cardIndex} question={question} answer={answer} />
       ) : (
         <Card cardIndex={cardIndex} type={type} />
       )}
