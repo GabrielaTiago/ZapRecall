@@ -35,6 +35,7 @@ body {
   color: var(--text-color);
   font-family: Recursive, sans-serif;
   font-weight: 700;
+  overflow-x: hidden;
 }
 header {
   width: 100vw;
