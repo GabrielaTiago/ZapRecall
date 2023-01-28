@@ -1,10 +1,10 @@
-<center><img src="public/favicon.ico" height="80px"/></center>
+<p align="center"><img src="public/favicon.ico" height="80px"/></p>
 
-# <center>ZapRecall</center>
+# <p align="center">ZapRecall</p>
 
-#### <center>App de flashcards</center>
+#### <p align="center">App de flashcards</p>
 
-<center >
+<p align="center">
    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"  height="30px"/>
 
    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  height="30px"/>
@@ -14,7 +14,7 @@
    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"  height="30px"/>
 
    <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"  height="30px"/>
-</center>
+</p>
 
 $~$
 
