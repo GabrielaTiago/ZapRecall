@@ -2,31 +2,23 @@
 
 # <p align="center">ZapRecall</p>
 
-#### <p align="center">App de flashcards</p>
+### <p align="center">App de flashcards</p>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"  height="30px"/>
-
-   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  height="30px"/>
-
-   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"  height="30px"/>
-
-   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"  height="30px"/>
-
-   <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"  height="30px"/>
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"  height="30px"/>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  height="30px"/>
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"  height="30px"/>
+    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"  height="30px"/>
+    <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"  height="30px"/>
 </p>
 
-$~$
+## :clipboard: Descrição
 
-### :clipboard: Descrição
+Este é um projeto de aplicativo de flashcards, que ajuda na memorização de perguntas e respostas. O aplicativo permite o uso das técnicas _Active Recall_ e _Spaced Repetition_ para melhorar a memória. Ao ler a pergunta ou afirmação e tentar lembrar da resposta, você pode verificar quais conteúdos estão frescos na memória e praticar com frequência os que não estão. Se você responder rapidamente a um flashcard, será registrado um **"Zap!"**. O aplicativo possui por padrão 3 decks com 8 flashcards cada, para serem escolhidos. Defina uma meta de _zaps_, escolha deck e teste seus conhecimentos!
 
-Este é um projeto de aplicativo de flashcards, que ajuda na memorização de perguntas e respostas. O aplicativo permite o uso das técnicas _Active Recall_ e _Spaced Repetition_ para melhorar a memória. Ao ler a pergunta ou afirmação e tentar lembrar da resposta, você pode verificar quais conteúdos estão frescos na memória e praticar com frequência os que não estão. Se você responder rapidamente a um flashcard, será registrado um **<span style="color:green">"Zap!"</span>**. O aplicativo possui por padrão 3 decks com 8 flashcards cada, para serem escolhidos. Defina uma meta de _zaps_, escolha deck e teste seus conhecimentos!
+⚡ [**Acesse aqui**](https://zaprecall-gabrielatiago.vercel.app)
 
-#### ⚡ [Acesse aqui](https://zaprecall-gabrielatiago.vercel.app)
-
----
-
-### :rocket: Rodando o projeto localmente
+## :rocket: Rodando o projeto localmente
 
 Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app), portanto, certifique-se de ter a última versão estável do [Node.js](https://nodejs.org/en/download) e [npm](https://www.npmjs.com/) rodando localmente.
 
@@ -56,33 +48,27 @@ Depois de instalar as dependências, execute o comando para iniciar a aplicaçã
     npm run start
 ```
 
-A aplicação será iniciada em "http://localhost:3000" no seu navegador.
+A aplicação será iniciada em `http://localhost:3000` no seu navegador.
 
----
+## :computer: Telas
 
-### :computer: Telas
+### Desktop
 
-##### Desktop:
+![app view on a large screen](screens/images/large-screen.gif)
 
-![viewing the app on a large screen](screens/images/large-screen.gif)
+### Tablet
 
-##### Tablet:
+![app view on a medium screen](screens/images/medium-screen.gif)
 
-![viewing the app on a medium screen](screens/images/medium-screen.gif)
+### Mobile
 
-##### Mobile:
+![app view on a mobile screen](screens/images/mobile-screen.gif)
 
-![viewing the app on a mobile screen](screens/images/mobile-screen.gif)
-
----
-
-### 🎮 Usando
+## 🎮 Usando
 
 https://user-images.githubusercontent.com/77814822/215285118-3a1218c5-b962-47f5-b7cc-ea48f8dfaea5.mp4
 
----
-
-### :books: Lições Aprendidas
+## :books: Lições Aprendidas
 
 - Object Literals
 - Solucionar o Prop Drilling
@@ -97,19 +83,23 @@ https://user-images.githubusercontent.com/77814822/215285118-3a1218c5-b962-47f5-
 - Animações com keyframes
 - Utilização da biblioteca Rect-Select
 
----
-
-### :bulb: Reconhecimentos
+## :bulb: Reconhecimentos
 
 - [Badges para Github](https://github.com/alexandresanlim/Badges4-README.md-Profile#-database-)
-- [README Inspiração de README](https://gist.github.com/luanalessa/7f98467a5ed62d00dcbde67d4556a1e4#file-readme-md)
+- [Inspiração de README](https://gist.github.com/luanalessa/7f98467a5ed62d00dcbde67d4556a1e4#file-readme-md)
 - [Driven Education](https://www.driven.com.br)
 
----
+## :muscle: Contribuição
 
-### 👩‍🦱 Autora
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhoria, abra uma _issue_ ou envie um _pull request_.
 
-- Gabriela Tiago é uma aluna de desenvolvimento web de Fullstack na Driven Education. Percorrendo o caminho do conhecimento, buscando aprimorar suas habilidades técnicas e de softskills, para que ela possa melhorar o trabalho que desenvolve.
+## :woman_technologist: Autora
+
+Gabriela Tiago de Araújo
+
+- email: <gabrielatiagodearaujo@outlook.com>
+- linkedin: <https://www.linkedin.com/in/gabrielatiago/>
+- portfolio: <https://gabrielatiago.vercel.app>
 
 $~$
 
